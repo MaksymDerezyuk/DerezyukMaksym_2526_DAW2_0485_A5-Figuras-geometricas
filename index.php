@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Seleccione una figura geométrica</h1>
-    <form action=" " method="post">
+    <form action="select.php" method="post">
         <label>
             <input type="radio" name="figura" value="triangulo">Triángulo
         </label><br>
