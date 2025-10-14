@@ -1,7 +1,6 @@
 <?php
 
 class FiguraGeometrica {
-
     protected $tipoFigura;
     protected $lado1;
 
@@ -11,7 +10,6 @@ class FiguraGeometrica {
     }
 
     public function __destruct() {
-
     }
 
     public function getTipoFigura() {

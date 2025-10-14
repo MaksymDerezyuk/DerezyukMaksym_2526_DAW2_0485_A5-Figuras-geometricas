@@ -4,23 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras Geométricas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Seleccione una figura geométrica</h1>
-    <form action="select.php" method="post">
-        <label>
-            <input type="radio" name="figura" value="triangulo">Triángulo
-        </label><br>
-        <label>
-            <input type="radio" name="figura" value="rectangulo">Rectángulo
-        </label><br>
-        <label>
-            <input type="radio" name="figura" value="cuadrado">Cuadrado
-        </label><br>
-        <label>
-            <input type="radio" name="figura" value="circulo">Círculo
-        </label><br><br>
-        <button type="submit">Continuar</button>
-    </form>
+    <main class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card mt-5">
+                    <div class="card-body">
+                        <h1 class="h4 mb-3">Seleccione una figura geométrica</h1>
+                        <form action="select.php" method="post">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="figura" id="triangulo" value="triangulo">
+                                <label class="form-check-label" for="triangulo">Triángulo</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="figura" id="rectangulo" value="rectangulo">
+                                <label class="form-check-label" for="rectangulo">Rectángulo</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="figura" id="cuadrado" value="cuadrado">
+                                <label class="form-check-label" for="cuadrado">Cuadrado</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="figura" id="circulo" value="circulo">
+                                <label class="form-check-label" for="circulo">Círculo</label>
+                            </div>
+                            <div class="mt-4">
+                                <button class="btn btn-primary" type="submit">Continuar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

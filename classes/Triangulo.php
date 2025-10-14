@@ -1,5 +1,5 @@
 <?php
-require_once '/FiguraGeometrica.php';
+require_once __DIR__ . '/FiguraGeometrica.php';
 
 class Triangulo extends FiguraGeometrica {
     private $lado2;
@@ -12,7 +12,6 @@ class Triangulo extends FiguraGeometrica {
     }
 
     public function __destruct() {
-
     }
 
     public function getLado2() {

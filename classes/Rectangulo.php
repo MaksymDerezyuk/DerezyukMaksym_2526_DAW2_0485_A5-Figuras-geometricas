@@ -1,5 +1,5 @@
 <?php
-require_once '/FiguraGeometrica.php';
+require_once __DIR__ . '/FiguraGeometrica.php';
 
 class Rectangulo extends FiguraGeometrica {
     private $lado2;
@@ -10,7 +10,6 @@ class Rectangulo extends FiguraGeometrica {
     }
 
     public function __destruct() {
-        // Destructor
     }
 
     public function getLado2() {

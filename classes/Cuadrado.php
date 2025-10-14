@@ -1,5 +1,5 @@
 <?php
-require_once '/FiguraGeometrica.php';
+require_once __DIR__ . '/FiguraGeometrica.php';
 
 class Cuadrado extends FiguraGeometrica {
     public function __construct($lado = 0) {
@@ -7,7 +7,6 @@ class Cuadrado extends FiguraGeometrica {
     }
 
     public function __destruct() {
-        // Destructor
     }
 
     public function calcularArea() {

@@ -1,14 +1,12 @@
 <?php
-require_once '/FiguraGeometrica.php';
+require_once __DIR__ . '/FiguraGeometrica.php';
 
 class Circulo extends FiguraGeometrica {
-
     public function __construct($radio = 0) {
         parent::__construct('Circulo', $radio);
     }
 
     public function __destruct() {
-        
     }
 
     public function calcularArea() {
