@@ -2,7 +2,7 @@
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['figura'])) {
-    $allowed = ['triangulo', 'rectangulo', 'cuadrado', 'circulo'];
+    $allowed = ['trianguloEquilatero', 'trianguloIsoceles', 'trianguloEscaleno', 'rectangulo', 'cuadrado', 'circulo'];
     $fig = $_POST['figura'];
     if (!in_array($fig, $allowed, true)) {
         header('Location: index.php');

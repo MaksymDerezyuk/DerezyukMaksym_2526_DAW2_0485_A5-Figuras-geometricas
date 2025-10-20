@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 clearError(name);
             }
         });
-    });
+    });º
 
     form.addEventListener('submit', function (e) {
         var valid = true;

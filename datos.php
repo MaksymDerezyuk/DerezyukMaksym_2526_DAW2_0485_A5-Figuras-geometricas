@@ -29,14 +29,31 @@ include 'header.php';
 ?>
 <h2 class="mb-4">Introduzca los lados para: <?php echo htmlspecialchars($figura); ?></h2>
 <form method="post" id="formLados" action="datos.php" class="row g-3">
-    <?php if ($figura === 'triangulo'): ?>
+    <?php if ($figura === 'trianguloEquilatero'): ?>
+        <div class="col-md-4">
+            <label class="form-label">Lado 1</label>
+            <input class="form-control" type="number" step="any" min="0.01" required name="lado1" value="<?php echo htmlspecialchars($l1); ?>">
+            <div class="error" id="err-lado1"></div>
+        </div>
+    <?php elseif ($figura === 'trianguloIsoceles'): ?>
+        <div class="col-md-4">
+            <label class="form-label">Lado 1 y 2</label>
+            <input class="form-control" type="number" step="any" min="0.01" required name="lado1" value="<?php echo htmlspecialchars($l1); ?>">
+            <div class="error" id="err-lado1"></div>
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Lado 3</label>
+            <input class="form-control" type="number" step="any" min="0.01" required name="lado2" value="<?php echo htmlspecialchars($l2); ?>">
+            <div class="error" id="err-lado2"></div>
+        </div>
+    <?php elseif ($figura === 'trianguloEscaleno'): ?>
         <div class="col-md-4">
             <label class="form-label">Lado 1</label>
             <input class="form-control" type="number" step="any" min="0.01" required name="lado1" value="<?php echo htmlspecialchars($l1); ?>">
             <div class="error" id="err-lado1"></div>
         </div>
         <div class="col-md-4">
-            <label class="form-label">Lado 2</label>
+            <label class="form-label ">Lado 2</label>
             <input class="form-control" type="number" step="any" min="0.01" required name="lado2" value="<?php echo htmlspecialchars($l2); ?>">
             <div class="error" id="err-lado2"></div>
         </div>

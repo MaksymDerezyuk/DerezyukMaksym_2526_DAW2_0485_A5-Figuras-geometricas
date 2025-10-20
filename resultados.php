@@ -32,8 +32,14 @@ if (($figura === 'cuadrado' || $figura === 'circulo') && $l1 <= 0) {
 }
 
 switch ($figura) {
-    case 'triangulo':
-        $obj = new Triangulo($l1, $l2, $l3);
+    case 'trianguloEquilatero':
+        $obj = new trianguloEquilatero($l1);
+        break;
+    case 'trianguloIsoceles':
+        $obj = new trianguloIsoceles($l1, $l1, $l2);
+        break;
+    case 'trianguloEscaleno':
+        $obj = new trianguloEscaleno($l1, $l2, $l3);
         break;
     case 'rectangulo':
         $obj = new Rectangulo($l1, $l2);
@@ -59,9 +65,9 @@ include 'header.php';
     <div class="card-body">
         <h5 class="card-title"><?php echo htmlspecialchars($obj->getTipoFigura()); ?></h5>
         <p class="card-text"><strong>Lado(s):</strong>
-        <?php if ($figura === 'triangulo'): ?>
+        <?php if ($figura === 'trianguloEscaleno'): ?>
             <?php echo htmlspecialchars($l1); ?>, <?php echo htmlspecialchars($l2); ?>, <?php echo htmlspecialchars($l3); ?>
-        <?php elseif ($figura === 'rectangulo'): ?>
+        <?php elseif ($figura === 'rectangulo' || $figura === 'trianguloIsoceles'): ?>
             <?php echo htmlspecialchars($l1); ?>, <?php echo htmlspecialchars($l2); ?>
         <?php else: ?>
             <?php echo htmlspecialchars($l1); ?>

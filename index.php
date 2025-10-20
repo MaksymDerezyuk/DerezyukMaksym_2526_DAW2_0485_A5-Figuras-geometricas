@@ -16,8 +16,16 @@
                         <h1 class="h4 mb-3">Seleccione una figura geométrica</h1>
                         <form action="select.php" method="post">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="figura" id="triangulo" value="triangulo">
-                                <label class="form-check-label" for="triangulo">Triángulo</label>
+                                <input class="form-check-input" type="radio" name="figura" id="trianguloEquilatero" value="trianguloEquilatero">
+                                <label class="form-check-label" for="trianguloEquilatero">Triángulo Equilátero</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="figura" id="trianguloIsoceles" value="trianguloIsoceles">
+                                <label class="form-check-label" for="trianguloIsoceles">Triángulo Isósceles</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="figura" id="trianguloEscaleno" value="trianguloEscaleno">
+                                <label class="form-check-label" for="trianguloEscaleno">Triángulo Escaleno</label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="figura" id="rectangulo" value="rectangulo">
